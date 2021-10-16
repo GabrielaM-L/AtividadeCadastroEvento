@@ -46,7 +46,7 @@ if (nomeEvento !== undefined) {
     console.log("O evento ainda não foi cadastrado.")
 }
 
-//Testa se o participante pode ser cadastrado, simula entrada de dados e lista participantes cadastrados
+//Testa se o participante pode ser cadastrado, simula entrada de dados e lista o nome e o número de participantes cadastrados
 console.log("Insira o nome do evento: ")
 if (nomeEvento !== undefined) {
     if (listaParticipantes.length < 100) {
@@ -57,6 +57,7 @@ if (nomeEvento !== undefined) {
                 console.log("Participante " + nomeParticipante + " cadastrado(a) com sucesso.")
                 listaParticipantes.push(nomeParticipante)
                 console.log(listaParticipantes)
+                console.log("Número de participantes cadastrados: " + listaParticipantes.length)
             } else {
                 console.log("Insira um nome válido para o(a) participante.")
             }
@@ -69,6 +70,7 @@ if (nomeEvento !== undefined) {
 } else {
     console.log("O evento ainda não foi cadastrado.")
 }
+
 
 
 
